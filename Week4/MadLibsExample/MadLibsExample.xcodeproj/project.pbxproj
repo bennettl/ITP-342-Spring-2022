@@ -13,6 +13,7 @@
 		5394775E27AB79E900632575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5394775C27AB79E900632575 /* Main.storyboard */; };
 		5394776027AB79EE00632575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5394775F27AB79EE00632575 /* Assets.xcassets */; };
 		5394776327AB79EE00632575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5394776127AB79EE00632575 /* LaunchScreen.storyboard */; };
+		53E3C7D527B21CA20010AC7B /* MadLibsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E3C7D427B21CA20010AC7B /* MadLibsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5394775F27AB79EE00632575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5394776227AB79EE00632575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5394776427AB79EE00632575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53E3C7D427B21CA20010AC7B /* MadLibsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadLibsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				5394775627AB79E800632575 /* AppDelegate.swift */,
 				5394775827AB79E800632575 /* SceneDelegate.swift */,
 				5394775A27AB79E800632575 /* ViewController.swift */,
+				53E3C7D427B21CA20010AC7B /* MadLibsViewController.swift */,
 				5394775C27AB79E900632575 /* Main.storyboard */,
 				5394775F27AB79EE00632575 /* Assets.xcassets */,
 				5394776127AB79EE00632575 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5394775B27AB79E800632575 /* ViewController.swift in Sources */,
+				53E3C7D527B21CA20010AC7B /* MadLibsViewController.swift in Sources */,
 				5394775727AB79E800632575 /* AppDelegate.swift in Sources */,
 				5394775927AB79E800632575 /* SceneDelegate.swift in Sources */,
 			);
@@ -294,6 +298,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +326,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

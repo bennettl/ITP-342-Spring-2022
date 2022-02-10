@@ -16,16 +16,46 @@ class ViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("\(#function)")
+        
         firstNameTextField.becomeFirstResponder()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("\(#function)")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("\(#function)")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("\(#function)")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("\(#function)")
     }
     
     @IBAction func backgroundButtonDidTapped(_ sender: UIButton) {
         firstNameTextField.resignFirstResponder()
     }
     
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        <#code#>
+        
     }
+    
+    @IBAction func userDidReturn(_ sender: Any) {
+        print("userDidReturn")
+        firstNameTextField.resignFirstResponder()
+    }
+    
+    
     
     @IBAction func userDidTappedYes(_ sender: UIButton) {
         
@@ -39,6 +69,8 @@ class ViewController : UIViewController {
 
         firstNameTextField.resignFirstResponder()
     }
+    
+    
     
 }
 
