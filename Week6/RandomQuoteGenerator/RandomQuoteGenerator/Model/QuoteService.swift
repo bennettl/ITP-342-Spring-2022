@@ -8,10 +8,8 @@
 import Foundation
 
 
-
 // Creating, updating, deleting, reading quotes
 class QuoteService{
-    
     
     static let shared = QuoteService()
     
@@ -19,15 +17,20 @@ class QuoteService{
         
     }
     
-    var quotes = [Quote]()
+    private var quotes = [
+        Quote(message: "People Don't Read Anymore", author: "Steve Jobs"),
+        Quote(message: "Wow!", author: "Owen Wilson"),
+        Quote(message: "One small step for man, one giant leap for mankind", author: "Neil Armstrong"),
+        Quote(message: "How are you all doing today?", author: "Bennett"),
+        Quote(message: "Anyone else for any other quotes?", author: "Bennett")
+    ]
     
     func create(message: String, author: String) -> Quote{
         let quote = Quote(message: message, author: author)
         quotes.append(quote)
-        
-        return Quote(message: "", author: "")
+        return quote
     }
-    
+   
     func list() -> [Quote]{
         return quotes
     }
@@ -42,6 +45,16 @@ class QuoteService{
     
     func getQuote(at index: Int) -> Quote{
         return quotes[index]
+    }
+    
+    func getRandomQuote() -> Quote?{
+        // Validate
+        if quotes.isEmpty{
+            return nil
+        }
+        
+        return quotes[Int.random(in: 0..<quotes.count)]
+        
     }
     
 }

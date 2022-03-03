@@ -8,6 +8,7 @@
 import Foundation
 
 struct Quote{
+    
     let message: String
     
     let author: String
