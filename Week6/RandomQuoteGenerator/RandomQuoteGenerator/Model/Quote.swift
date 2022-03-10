@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Quote{
+struct Quote : Codable{
     
     let message: String
     

@@ -10,14 +10,18 @@ import UIKit
 
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return 1000
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell")!
+        
         cell.textLabel?.text = "Hello"
-        cell.detailTextLabel?.text = "World"
+        cell.detailTextLabel?.text = "World @ \(indexPath.row)"
 
         return cell
     }

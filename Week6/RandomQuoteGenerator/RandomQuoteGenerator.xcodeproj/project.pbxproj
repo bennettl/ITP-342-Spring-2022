@@ -17,6 +17,7 @@
 		53C74E2127BDEC960089F2E1 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C74E2027BDEC960089F2E1 /* QuoteService.swift */; };
 		53C74E2727BDF45A0089F2E1 /* NewQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C74E2627BDF45A0089F2E1 /* NewQuoteViewController.swift */; };
 		53C74E2F27BDFBF10089F2E1 /* RandomQuoteGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C74E2E27BDFBF10089F2E1 /* RandomQuoteGeneratorTests.swift */; };
+		53F815C627D6FA3F0017C3FE /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F815C527D6FA3F0017C3FE /* QuotesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		53C74E2627BDF45A0089F2E1 /* NewQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuoteViewController.swift; sourceTree = "<group>"; };
 		53C74E2C27BDFBF10089F2E1 /* RandomQuoteGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomQuoteGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C74E2E27BDFBF10089F2E1 /* RandomQuoteGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteGeneratorTests.swift; sourceTree = "<group>"; };
+		53F815C527D6FA3F0017C3FE /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				53C74E2627BDF45A0089F2E1 /* NewQuoteViewController.swift */,
 				5382C6BB27D05FA30069E57C /* RandomQuoteViewController.swift */,
+				53F815C527D6FA3F0017C3FE /* QuotesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				53C74E2127BDEC960089F2E1 /* QuoteService.swift in Sources */,
 				53C74E0727BDEBCD0089F2E1 /* AppDelegate.swift in Sources */,
 				53C74E0927BDEBCD0089F2E1 /* SceneDelegate.swift in Sources */,
+				53F815C627D6FA3F0017C3FE /* QuotesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
