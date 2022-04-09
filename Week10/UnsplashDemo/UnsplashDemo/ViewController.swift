@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         print("1")
         let url = URL(string: "https://api.unsplash.com/photos/random")!
         var request = URLRequest(url: url)
-        request.addValue("Client-ID XXX", forHTTPHeaderField: "Authorization")
+        request.addValue("Client-ID Vye9-O8WPgWHwExgn921n0zXmzdTE8J6QVX7q_P6dLs", forHTTPHeaderField: "Authorization")
         
         print("2")
 
@@ -86,9 +86,13 @@ class ViewController: UIViewController {
                 let image = try decoder.decode(Image.self, from: data!)
                 print(image.urls.full)
                
+                // UI Operation
                 DispatchQueue.main.async {
                     self.imageView.kf.setImage(with: URL(string: image.urls.full)!)
                 }
+                
+                
+                
                 
             } catch{
                 print(error.localizedDescription)
